@@ -18,7 +18,19 @@ git stash
   stash pop
 git reset
 git revert
-git log
+
+git log                                                         Display the basic commit history.
+  - git log --oneline                                           Show a compact, one-line summary of each commit.
+  - git log --graph                                             Visualize the commit history as an ASCII art graph.
+  - git log --abbrev-commit                                     Show abbreviated SHA-1 hashes in the log.
+  - git log --pretty=format"%h %an <%ae> %s"                    Include the author's name and email in the log.
+  - git log --author="AuthorName"                               Show commits by a specific author.
+  - git log branch_name                                         Display commits only in a specific branch.
+  - git log -- <file_path>                                      List all commits that modified a specific file.
+  - git log --color                                             Add color to the log for better readability.
+  - git log --grep="keyword"                                    Search commit messages for a keyword.
+  - git log -n 10                                               Limit the display to a specific number of recent commits (e.g., -n 10 shows the last 10 commits)
+  - git log --pretty=format"%h %ad | %s%d [%an]" --date=short   Display commit dates in a custom format.
 
 Scenario: You want Branch_B to make an exact copy of Branch_A
 - git checkout Branch_B
@@ -32,3 +44,17 @@ Scenario: Rename an existing branch
 Scenario: set global defaultBranch name
 - git config --global init.defaultBranch <name>
 - git branch -m <name>
+
+Scenario: create new repo
+echo "# pantry" >> README.md
+- git init
+- git add README.md
+- git commit -m "first commit"
+- git branch -M main
+- git remote add origin <remote repo url>
+- git push -u origin main
+
+Scenario: You want to push an existing local repo to a remote repo 
+- git remote add origin <remote repo url>
+- git branch -M main
+- git push -u origin main
