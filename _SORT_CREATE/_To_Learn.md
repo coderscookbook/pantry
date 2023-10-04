@@ -12,6 +12,8 @@
 9.  js closure
 10. Node.js streams https://amplication.com/blog/understanding-nodejs-streams
 11. JS Lazy Loading https://blog.openreplay.com/lazy-loading-in-javascript/
+12. Load Balancers vs Rev Proxy vs API Gateway https://medium.com/geekculture/load-balancer-vs-reverse-proxy-vs-api-gateway-e9ec5809180c
+13. 
 
 # MISC: TO LEARN/QUESTIONS LIST
 1. https://betterhumans.pub/the-most-powerful-morning-routine-ive-found-after-3-years-of-experimenting-5ce320dda731
