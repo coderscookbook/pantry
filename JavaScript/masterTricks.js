@@ -1,0 +1,2 @@
+//https://levelup.gitconnected.com/some-javascript-tips-to-make-you-look-more-like-a-master-aaea9f92fc3c
+//https://madhub081011.medium.com/typescript-tricks-that-make-developers-life-easier-part-1-ecb6c50771f1

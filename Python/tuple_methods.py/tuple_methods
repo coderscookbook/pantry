@@ -1,0 +1,10 @@
+# tuple_methods_py
+my_tuple = (('A', 0),('B', 1), ('C', 2), ('D', 3), ('E', 4))
+
+# index()
+index = my_tuple.index(('A', 0))
+print(f"index: {index}")
+
+# count()
+count = my_tuple.count(('A', 0))
+print(f"count: {count}")

@@ -1,0 +1,5 @@
+https://betterprogramming.pub/how-to-outperform-a-10x-developer-fa1132807934
+
+VS STUDIO Settings
+"window.zoomLevel": -0.75,
+"editor.fontSize": 15,

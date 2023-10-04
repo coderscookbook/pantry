@@ -1,0 +1,2 @@
+#.sddraft files
+#arcpy.CreateGPSDDraft()

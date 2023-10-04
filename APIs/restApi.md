@@ -1,0 +1,1 @@
+https://medium.com/@shubhadeepchat/best-practices-for-good-rest-api-design-b5fae9a62c86

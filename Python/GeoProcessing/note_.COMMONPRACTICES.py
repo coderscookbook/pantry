@@ -1,0 +1,1 @@
+# Avoid global variables as much as possible (security)
