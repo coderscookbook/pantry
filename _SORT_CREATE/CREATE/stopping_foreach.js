@@ -1,0 +1,1 @@
+// https://javascript.plainenglish.io/interview-can-you-stop-foreach-in-javascript-724d9d76fd72

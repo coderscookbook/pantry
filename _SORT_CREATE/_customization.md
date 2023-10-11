@@ -1,4 +1,4 @@
-Brew install
+`CLI`
  tmux - 
  midnight commander
  wget
@@ -6,3 +6,10 @@ Brew install
  tree
  python
  htop
+
+ `VS CODE EXTENSIONS`
+ code tour - https://marketplace.visualstudio.com/items?itemName=vsls-contrib.codetour
+ 
+
+
+ `VIM Plugins`
