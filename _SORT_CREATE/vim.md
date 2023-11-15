@@ -67,8 +67,13 @@ FIND: insert multiple cursors
     :%s/pattern/replacement/g - Replace all occurrences of the pattern with the replacement
     :%s/pattern/replacement/gc - Replace occurrences with confirmation
     :s/pattern/replacement - Replace the first occurrence in the current line
-    :s/patter/replacement/g - Replace all occurrences in the current line
+    :s/pattern/replacement/g - Replace all occurrences in the current line
     :g/variable_name/normal! I - Insert text at the beginning of each pattern that matches
+    :%s/@.*//g - Remove all characters from the @ symbol to the end of the line for each line in file
+	- :%s - substitute command for each line in the file
+	- @.* pattern to match (@ is itself; .* part matches any number of chars)
+	- // = reaplace the matched pattern with nothing (ie. delete it)
+	- g = flag that means global
 Practice Line: 
 |||||||||| <<<<buffy<<<<<<<<<<<<<<<>>>>buffy>>>>>>>>>>>>>>>buffybuffy 
 

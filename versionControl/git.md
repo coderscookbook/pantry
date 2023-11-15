@@ -58,3 +58,17 @@ Scenario: You want to push an existing local repo to a remote repo
 - git remote add origin <remote repo url>
 - git branch -M main
 - git push -u origin main
+
+Scenario: Bring down a remote branch into local branch
+- git fetch origin
+- git checkout remote-branch-name OR git switch remote-branch-name
+OR
+- git checkout -b <local_branch_name> <remote>/<remote_branch_name>
+- git checkout -b feature origin/feature
+
+SCENARIO: You want to bring a branch from one repo into another repo
+- git clone <destination_repo_url>
+- cd <destination_repo_name>
+- git remote add source_repo <source_repo_url>
+- git fetch source_repo feature:feature
+- git checkout feature
