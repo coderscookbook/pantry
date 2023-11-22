@@ -8,6 +8,7 @@ tmux aattach -t SESSION_NAME
 tmux ls 
 exit or Ctrl+D
 tmux kill-session -t SESSION_NAME
+tmux list-sessions
 
 ## Windows (<prefix> + __)
 - c = new window
@@ -24,5 +25,9 @@ tmux kill-session -t SESSION_NAME
 - " = split pane horizontally
 - q = show pane's number
 - arrow key or o = switch panes
-- x = delete pane
+- x = delete pane and then confirm with Y or N
+- Alt/Opt + arrow keys = resize pane
 
+## Workflow
+- tmux attach-session -t SESSION_NAME
+- tmux switch-client -t SESSION_NAME

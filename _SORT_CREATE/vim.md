@@ -57,6 +57,7 @@ z   q + "key" - create macro, stop recording macro
     . - Repeat the last command
     > - Shift selected text to the right (indent)
     < - Shift selected text to the left (unindent)
+    
 
 FIND: insert multiple cursors
 
