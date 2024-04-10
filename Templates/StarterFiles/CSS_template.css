@@ -1,0 +1,15 @@
+/*
+ * Title: [Title of Your Stylesheet]
+ * Description: [Description of what your stylesheet does]
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+
+/* Reset default browser styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Add your styles below */
