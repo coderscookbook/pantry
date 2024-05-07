@@ -19,4 +19,10 @@ cargo new zero2prod - intialize new project
     git push -u origin main
     ```
 
+`Zero To Production will focus on the challenges of writing Cloud-native applications in a team of
+four or five engineers with different levels of experience and proficiency`
+- To achieve high-availability while running in the fault-prone environments
+- To allow us to continuously release new versions with zero downtime
+- To handl edynamic workloads(e.g. request volumes)
+
 
