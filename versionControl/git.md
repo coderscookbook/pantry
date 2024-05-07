@@ -72,3 +72,6 @@ SCENARIO: You want to bring a branch from one repo into another repo
 - git remote add source_repo <source_repo_url>
 - git fetch source_repo feature:feature
 - git checkout feature
+
+# GIT DIFF
+git diff -u (meld, vimdiff, KDiff3)
