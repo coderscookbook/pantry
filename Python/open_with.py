@@ -163,6 +163,35 @@ except FileExistsError:
 ##############################################################################
 
 # Append to a file
+# - write() and writelines() will append to the end of existing file
+# - if the file does not exist, new file is created as in 'w' mode
+with open(path_w, mode='a') as f:
+  f.write('Four')
+with open(path_w) as f:
+  print(f.read())
+  # One 
+  # Two
+  # ThreeFour
+with open(path_w, mode='a') as f:
+  f.write('\nFour')
+with open(path_w) as f:
+  print(f.read())
+  # One 
+  # Two
+  # ThreeFour
+  # Four
+
+
+##############################################################################
+# MODES: 'r+'
+##############################################################################
+
+# File is open in update mode
+# - write() and writelines() will overwrite the existing file from the beginning
+with open(path_w, mode='r+') as f:
+  f.write('Four')
+with open(path_w) as f:
+  print(f.read())
 
 
 
