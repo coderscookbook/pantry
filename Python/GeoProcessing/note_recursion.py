@@ -13,6 +13,7 @@
         datasets organized in a hierarchical manner
 '''
 
+# FOR TEST DATASETS: see DataSets_Sources.md 
 
 #####################################################################################
 # EXAMPLE 1 (GEOPROCESSING/AUTOMATE BATCH PROCESSING): Recursive Directory Traversal# 
