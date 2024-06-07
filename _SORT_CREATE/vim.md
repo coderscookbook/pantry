@@ -1,5 +1,8 @@
 # VIM COMMANDS CHEAT SHEET
 
+### Random Useful
+:put=expand('%:p'): get filepath of current buffer, copy and paste into buffer
+
 ### Navigating Code Block
 }: Move to the beginning of the next paragraph or code block.
 %: Jump between matching opening and closing parentheses, brackets, or braces.
