@@ -24,3 +24,17 @@ console.log(months);
 // Expected output: Array ["Jan", "Feb", "March", "April", "May"]
 
 months.splice('June', 4, 1)
+
+// Remove 0(zero) elements before index 2, and insert "drum" and "guitar"
+const myFish = ["angel", "clown", "mandarin", "sturgeon"];
+const removed = myFish.splice(2, 0, "drum");
+// myFish is ["angel", "clown", "drum", "mandarin", "sturgeon"]
+// removed is [], no elements removed
+
+// Remove 0 elements at index 0, and insert "angel"
+const myFish2 = ["angel", "clown", "mandarin", "sturgeon"];
+const removed2 = myFish2.splice(2, 0, "drum", "guitar");
+// myFish is ["angel", "clown", "drum", "guitar", "mandarin", "sturgeon"]
+// removed is [], no elements removed
+
+// MORE EXAMPLES ON WEBSITE
