@@ -35,7 +35,12 @@ Reduce():
     returns a single value
 **************************************************************************************/
 // Summing all numbers in an array
+// Without Initial Accumulator
 const numbersC = [1, 2, 3, 4, 5];
 const sum = numbersC.reduce((accumulator, currentValue) => 
   accumulator + currentValue, 0);
 console.log("NumbersC: ", numbersC, "\nSum: ", sum);
+// With Initial Accumulator
+const numbersD = [1, 2, 3, 4, 5];
+const sum2 = numbersD.reduce((acc, currentValue) => acc + currentValue, 0);
+console.log(sum2); // Output: 15

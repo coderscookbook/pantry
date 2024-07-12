@@ -17,7 +17,7 @@ git pull
 git stash
   stash pop
 git reset
-git revert
+git revert --hard <commit id>
 
 git log                                                         Display the basic commit history.
   - git log --oneline                                           Show a compact, one-line summary of each commit.
