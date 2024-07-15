@@ -93,3 +93,15 @@ function maxNum(numArr) {
 const numbersE = [34, 212, 1023, 112, 1930, 1212, 3802, 1143]
 let maxNumber = maxNum(numbersE);
 console.log(maxNumber);
+
+
+/*************************************************************************************
+Find(): 
+  - find() method is used to retrieve teh first element of array that satisfies a 
+    condition
+  - returns value of first element that matches the condition, or undefined if no value
+    satisfies that condition
+**************************************************************************************/
+const arrayF = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const foundElement = find(element => element > 2);
+console.log(foundElement);
