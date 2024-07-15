@@ -18,8 +18,11 @@ let classElements = document.getElementsByClassName('.class-name');
 // 3. By Tag Name
 let tagElements = document.getElementsByTagName('tag-name');
 // 4. By CSS Selector
-let cssElement1 = document.querySelectorAll('css-selector');
+let cssElement1 = document.querySelector('div');
 let cssElement2 = document.querySelectorAll('css-selector');
+let cssElement3 = document.querySelector('.myClass');
+let cssElement4 = document.querySelector('[data-my-attribute]');
+let cssElement5 = document.querySelector('div.container > p.first-paragraph');
 
 
 /*---------------------------- Manipulating DOM Elements ----------------------------*/
@@ -42,7 +45,6 @@ element.id = 'myId';
 element.classList.add('myClass');
 element.classList.remove('myClass');
 element.innerText = "Hello World";
-
 
 
 // 3. CHANGING STYLES
