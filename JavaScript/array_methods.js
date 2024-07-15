@@ -103,5 +103,5 @@ Find():
     satisfies that condition
 **************************************************************************************/
 const arrayF = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-const foundElement = find(element => element > 2);
+const foundElement = arrayF.find(element => element > 2);
 console.log(foundElement);
