@@ -59,3 +59,48 @@ document.querySelector(".box").addEventListener('click', () => {
 document.querySelector(".container").addEventListener('click', () => {
   console.log("parent");
 }); //Output === parent
+
+
+/* .STOPPROPAGATION()
+    - if we don't want by default action, we can stop this by passing an
+      argument ('e') inside the function and write stopPropagation()
+    - only write function in the child (in this example)
+      - now when inner box is clicked, console will only show 'child' and 'parent'
+        will only show when the outer container is clicked */
+document.querySelector(".box").addEventListener('click', (e) => {
+  e.stopPropagation();
+  console.log("child");
+}); 
+document.querySelector(".container").addEventListener('click', () => {
+  console.log("parent");
+}); 
+
+
+/* TIMING BASED EVENTS
+    - events which execute over a period of time or scheduled to happen after
+      a certain duration
+    - it includes two main functions: setInterval and setTimeout */
+// setInterval() runs a function for every given interval of time
+// - infinite
+let x = 0
+setInterval(() => {
+  console.log(`${x}`);
+  x += 1;
+}, 1000)
+// - stopped with clearInterval()
+let a = 1;                            // number of times function will run
+let acc = setInterval(() => {
+  if (a <= 5) {                       // condition checking
+    console.log(`${a}`);
+  } 
+  else {                              // when the value of 'a' becomes greater than 5
+    clearInterval(acc);               // used to terminate the setInterval()
+    console.log("Fin");
+  }
+  a++;                                // increment
+}, 1000);
+// setTimeout() - runs a function after a certain period of time (only once)
+setTimeout(() => {
+  console.log("Done")
+}, 3000);
+// OUTPUT: 1 2 3 DONE 4 5 FIN
