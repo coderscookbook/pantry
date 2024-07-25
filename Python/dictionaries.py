@@ -41,7 +41,6 @@ is_duke_present: bool = "Duke" in schools
 print(f"Duke is present: {is_duke_present}")
 print(schools)
 
-
 # Update/reassign a key-value pair
 schools["UNC"] = 20000
 schools["NCSU"] += 200
@@ -52,7 +51,9 @@ print(schools)
 invert_schools: dict[int, str]
 invert_schools[19400] = "UNC"
 
+########################################################################
 # Iterating
+########################################################################
 for school in schools:
   print(school, schools[school])
 
@@ -77,4 +78,15 @@ print(schools)
 ########################################################################
 # Dictionary methods
 ########################################################################
+# clear()
+# copy()
+# fromkeys()
+# get()
+# items()
+# keys()
+# pop()
+# popitem()
+# setdefault()
+# update()
+# values()
 
