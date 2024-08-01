@@ -1,5 +1,11 @@
-<html>  
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modern HTML Page Template</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
       .row {
         width: 100%;
@@ -14,17 +20,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 0.5px solid gray;
+        border: 0.5px dashed gray;
       }
-
-    </style>
-    <style>
-      /* .color {
-        width: 100%;
-        height: 150px;
-        background-color: ;
-      } */
-
+    
       .color {
         --hue: 200;
         --saturation: 100%;
@@ -32,11 +30,19 @@
         width: 100%;
         height: 150px;
         background-color: hsl(var(--hue), var(--saturation), var(--lightness));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold;
       }
     </style>
   </head>
+
   <body>
-    <div class ="color"></div>
+
+    <div class="color"></div>
     <br>
     <br>
 
@@ -64,12 +70,24 @@
 
     <h2>Lightness</h2>
     <div class="row">
-      <div class="row-item" style="background-color: hsl(200,100%,0%);">0%</div>
-      <div class="row-item" style="background-color: hsl(200,100%,20%);">20%</div>
+      <div class="row-item" style="background-color: hsl(200,100%,0%); color: white;">0%</div>
+      <div class="row-item" style="background-color: hsl(200,100%,20%); color: white;">20%</div>
       <div class="row-item" style="background-color: hsl(200,100%,40%);">40%</div>
       <div class="row-item" style="background-color: hsl(200,100%,60%);">60%</div>
       <div class="row-item" style="background-color: hsl(200,100%,80%);">80%</div>
       <div class="row-item" style="background-color: hsl(200,100%,100%);">100%</div>
     </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const colorDiv    = document.querySelector(".color");
+        console.log("ComputedStyle: ", getComputedStyle(colorDiv));
+        const hue         = getComputedStyle(colorDiv).getPropertyValue("--hue").trim();
+        const saturation  = getComputedStyle(colorDiv).getPropertyValue("--saturation").trim();
+        const lightness   = getComputedStyle(colorDiv).getPropertyValue("--lightness").trim();
+
+        colorDiv.textContent = `Hue: ${hue}\nSaturation: ${saturation}\nLightness: ${lightness}`;
+      })
+    </script>
   </body>
 </html>
