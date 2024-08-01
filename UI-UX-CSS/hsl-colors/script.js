@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   const colorDiv    = document.querySelector(".color");
-  const rowItemDiv  = document.querySelector(".row-item");
-
-  console.log("RowItemDiv", rowItemDiv);
+  // const rowItemDiv  = document.querySelector(".row-item");
 
   const hue         = getComputedStyle(colorDiv).getPropertyValue("--hue").trim();
   const saturation  = getComputedStyle(colorDiv).getPropertyValue("--saturation").trim();
