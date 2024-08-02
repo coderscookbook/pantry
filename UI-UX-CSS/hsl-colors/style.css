@@ -18,6 +18,145 @@ html, body {
   border: 5px solid hsl(300, 90%, 22%);
 }
 
+/********************************SECTION: CSS POSITIONING********************************/
+/* src: https://www.youtube.com/watch?v=MxEtxo_AaZ4&ab_channel=SlayingTheDragon 
+  5 positioning values: absolute, relative, fixed, sticky, static */
+:root {
+  --clr-dark: #070a12;
+  --clr-light: #f1f5f9;
+  --clr-accent: #e11d48;
+  --clr-lightRose: #fb7185;
+  --clr-green: #4ade80;
+  --clr-sky: #38bdf8;
+  --clr-pink: #f472b6;
+  --clr-violet: #a78bfa;
+  --clr-yellow: #facc15;
+}
+
+.positioning-section {
+  display: grid;
+  grid-template-rows: repeat(3, 120px);
+  grid-template-columns: repeat(4, 120px);
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  opacity: 85%;
+  /*position: relative; >>absolute, relative, fixed, sticky, static*/
+}
+
+.pos-item {
+  width: 100px;
+  height: 100px;
+  background-color: hsl(240, 50%, 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 1.25rem;
+  border-radius: 10px;
+  color: hsl(0, 0%, 30%);
+}
+
+/* 
+absolute 
+- item 1 removed from the entire document (above all else)
+  - other elements act as if it doesn't exist anymore
+- can be moved to anywhere on page view
+- negative numbers make object leave page boundaries
+  - use overflow-x: hidden; in body{} to remove horizontal scrolling
+- to position relative to parent, add position: to parent element
+ - if no parent, looks up the tree until it finds element with position{} prop
+ - default is static or window
+- use z-index property to layer items
+*/
+.item-1 {
+  background-color: var(--clr-lightRose);
+  position: absolute;
+  top: 300px;
+  right: 300px;
+  z-index: -1;
+}
+
+/*
+static
+- default value for all elements, even when prop isn't there
+- doesn't have access to zindex: or top/right/bottom/left props
+- maintains element in normal flow of the document
+*/
+.item-2 {
+  background-color: var(--clr-sky);
+  position: static;
+}
+
+/*
+relative
+- use when you want to place element in the normal flow of the document
+- access to top/right/left/bottom/zindex props
+- all other elements behave normally as if element was still in its start position
+*/
+.item-3 {
+  background-color: var(--clr-yellow);
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+
+/*
+fixed
+- elements are removed from document (similar to absolute{})
+- compared to absolute{}
+  - always positioned relative to html element 
+- element stays on fixed location on page when scrolling
+*/
+.item-4 {
+  background-color: var(--clr-green);
+  position: fixed;
+  bottom: 100px;
+  left: 350px;
+}
+
+/*
+sticky
+- element sticks when scrolling until entire element is out of view
+- must have top: property
+*/
+.item-5 {
+  background-color: var(--clr-violet);
+  position: sticky;
+  top: 0px;
+}
+
+.item-6 {
+  background-color: var(--clr-pink);
+}
+
+.item-7 {
+  background-color: var(--clr-lightRose);
+}
+
+.item-8 {
+  background-color: var(--clr-sky);
+}
+
+.item-9 {
+  background-color: var(--clr-green);
+}
+
+.item-10 {
+  background-color: var(--clr-yellow);
+}
+
+.item-11 {
+  background-color: var(--clr-violet);
+}
+
+.item-12 {
+  background-color: var(--clr-pink);
+}
+
+
+/********************************SECTION: HSL COLORS**********************************/
 .row {
   width: 100%;
   display: flex;
@@ -59,88 +198,3 @@ html, body {
   --lightness: 30%;
 }
 
-/********************************SECTION: CSS POSITIONING********************************/
-/* src: https://www.youtube.com/watch?v=MxEtxo_AaZ4&ab_channel=SlayingTheDragon */
-:root {
-  --clr-dark: #070a12;
-  --clr-light: #f1f5f9;
-  --clr-accent: #e11d48;
-  --clr-lightRose: #fb7185;
-  --clr-green: #4ade80;
-  --clr-sky: #38bdf8;
-  --clr-pink: #f472b6;
-  --clr-violet: #a78bfa;
-  --clr-yellow: #facc15;
-}
-
-.positioning-section {
-  display: grid;
-  grid-template-rows: repeat(3, 120px);
-  grid-template-columns: repeat(4, 120px);
-  justify-content: center;
-  align-items: center;
-}
-
-.pos-item {
-  width: 100px;
-  height: 100px;
-  background-color: hsl(240, 50%, 70%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  font-weight: 700;
-  font-size: 1.25rem;
-  border-radius: 10px;
-  color: hsl(0, 0%, 30%);
-}
-
-.item-1 {
-  background-color: var(--clr-lightRose);
-  position: sticky;
-  bottom: 0px;
-}
-
-.item-2 {
-  background-color: var(--clr-sky);
-}
-
-.item-3 {
-  background-color: var(--clr-yellow);
-}
-
-.item-4 {
-  background-color: var(--clr-green);
-}
-
-.item-5 {
-  background-color: var(--clr-violet);
-}
-
-.item-6 {
-  background-color: var(--clr-pink);
-}
-
-.item-7 {
-  background-color: var(--clr-lightRose);
-}
-
-.item-8 {
-  background-color: var(--clr-sky);
-}
-
-.item-9 {
-  background-color: var(--clr-green);
-}
-
-.item-10 {
-  background-color: var(--clr-yellow);
-}
-
-.item-11 {
-  background-color: var(--clr-violet);
-}
-
-.item-12 {
-  background-color: var(--clr-pink);
-}
