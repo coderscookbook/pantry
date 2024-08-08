@@ -90,3 +90,22 @@ print(schools)
 # update()
 # values()
 
+########################################################################
+# Case-insensitive Dictionaries
+########################################################################
+# pip install requests (install library first)
+from requests.structures import CaseInsensitiveDict
+
+# Key is type str, value is either str or int
+# Note no naming convention is used for keys
+# NOTE: ONLY works with dicts with ALL unique keys
+data: dict[str, str | int] = {'Name': 'Bob',
+                              'Age-in-years': 29,
+                              'Blood-Type': 'B-',
+                              'Profession': 'Pilot',
+                              'Best-Friend': 'Anna'}
+
+cid: CaseInsensitiveDict[str |int] = CaseInsensitiveDict(data)
+print('Name:', cid['name']) # normally raises an exception
+print('Age: ', cid['age-in-years']) # no worries
+print("Blood Type", cid['BLOOD-TyPe']) # no worries
