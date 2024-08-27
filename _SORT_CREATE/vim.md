@@ -98,3 +98,19 @@ Practice Line:
     :sp, :vs - Split the window horizontally or vertically
     ctrl-w h, ctrl-w j, ctrl-w k, ctrl-w l - Navigate between split windows
     ctrl-w s, ctrl-w v - Split the current window horizontally or vertically
+
+### SORTING
+    :'<,'>sort	    - sort highlighted lines alphabetically based on first char of each line
+    :'<,'>sort i    - sort as above but ignore case of first char
+    :'<,'>sort!	    - same as above but sort reverse order 
+    :'<,'>sort n    - sort numerically
+    Practice:
+	H
+	O
+	X
+	122231
+	848
+	43
+	20
+
+	
