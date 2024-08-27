@@ -55,3 +55,26 @@ for value in values:
 # WITH:
 filtered_transformed = [transformed for value in values if (transformed := transform(value)) > threshold]
 print(filtered_transformed) # [40] for both
+
+# MORE EXAMPLES:
+# A:::
+users: dict[int, str] = {0: 'Bob', 1: 'Mario'}
+# without walrus operator
+user: str | None = users.get(3)
+if user: 
+  print(f'{user} exists!')
+else:
+  print('No user found...')
+# with walrus operator
+if user := users.get(3): # directly assigns the variable value in the if statement
+  print(f'{user} exists!')
+else:
+  print('No user found...')
+# B:::
+def get_info(text: str) -> dict:
+  return {'words': (words := text.split()),
+          'word_count': len(words),
+          'char_count': len(''.join(words))} # not to use walrus op in dictionary, use ()
+print(get_info('Bob'))
+print(get_info('Hello, Bob'))
+print(get_info('My name is Bob!'))

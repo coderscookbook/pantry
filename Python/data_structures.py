@@ -71,7 +71,16 @@ difference_set = set_a.difference(set_b)
 print(difference_set)           # {1, 2}
 # Symmetric Difference (elements present in either set, but not both)
 symmetric_difference_set = set_a.symmetric_difference(set_b)
-print(symmetric_difference_set) # Output: {1, 2, 4, 5}
+print("Unique Elements: ", set_a ^ set_b)    # Output: {1, 2, 4, 5} SYMMETRIC DIFFERENCE
+print(symmetric_difference_set)              # Output: {1, 2, 4, 5}
+# Operations Tricks NOTE: ORDER MATTERS
+set_a = {1, 2, 3, 4, 5}
+set_b = {4, 5, 6, 7, 8}
+print("Subracting Sets: ", set_a - set_b)    # Output: {1, 2, 3}
+print("Subracting Sets: ", set_b - set_a)    # Output: {8, 6, 7}
+print("Subracting Sets: ", set_a & set_b)    # Output: {4, 5}
+print("Subracting Sets: ", set_a ^ set_b)    # Output: {1, 2, 3, 6, 7, 8} SYMMETRIC DIFFERENCE
+
 
 ######################################################################################
 # 5. Deque (Double-ended Queue): optimized list for inserting and removing items from both ends

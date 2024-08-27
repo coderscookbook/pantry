@@ -12,9 +12,9 @@ def BracketMatcher(string):
   stack = []
   
   for letter in string :
-    if letter == '(':
+    if letter == '(' or letter == '[' or letter == '{':
       stack.append(letter)
-    elif letter == ')':
+    elif letter == ')' or letter == '[' or letter == '{':
       if len(stack) == 0:
         return 0
       else:
@@ -22,8 +22,10 @@ def BracketMatcher(string):
         
   return 1 if len(stack) == 0 else 0
 
-# Example usage
-print(BracketMatcher("()"))   # Output: 1
-print(BracketMatcher("(())")) # Output: 1
-print(BracketMatcher("(()"))  # Output: 0
-print(BracketMatcher(")("))   # Output: 0
+if __name__ == "__main__":
+
+  # Example usage
+  print(BracketMatcher("()"))   # Output: 1
+  print(BracketMatcher("(())")) # Output: 1
+  print(BracketMatcher("(({))"))  # Output: 0
+  print(BracketMatcher("(){}(])"))   # Output: 0
