@@ -1,7 +1,7 @@
-# These are some examples of commonly ignored file patterns.
-# You should customize this list as applicable to your project.
-# Learn more about .gitignore:
-#     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
+# TODO Create these files for committing
+Coding_General/complexity_time_space.md
+Python/__GENERAL_CONCEPTS.py
+Python/partials.py
 
 # Files
 .gitignore
@@ -55,7 +55,3 @@ Thumbs.db
 *.mov
 *.wmv
 
-# TODO Create these files for committing
-Coding_General/complexity_time_space.md
-Python/__GENERAL_CONCEPTS.py
-Python/partials.py
