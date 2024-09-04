@@ -1,0 +1,11 @@
+ID,Name,Latitude,Longitude,LandUse,Area_sq_km,Population,Elevation_m
+1,Lakeview Park,34.052235,-118.243683,Parks,2.5,0,150
+2,Greenwood Estates,34.061073,-118.301834,Residential,1.2,5000,125
+3,Sunset Boulevard,34.098342,-118.326743,Commercial,0.8,0,100
+4,Riverside Apartments,34.033256,-118.253438,Residential,3.0,15000,200
+5,Silver Lake Reservoir,34.086829,-118.270073,Parks,1.6,0,170
+6,Downtown Office,34.040713,-118.246769,Commercial,0.5,0,90
+7,Highland Gardens,34.097700,-118.336128,Residential,2.0,8000,130
+8,Maplewood School,34.062500,-118.308479,Educational,0.9,200,110
+9,Hilltop View,34.048512,-118.258100,Residential,1.8,6000,140
+10,Westside Plaza,34.045919,-118.265472,Commercial,0.6,0,80

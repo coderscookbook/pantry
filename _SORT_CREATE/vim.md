@@ -4,6 +4,13 @@
 :put=expand('%:p'): get filepath of current buffer, copy and paste into buffer
 
 ### Navigating Code Block
+ctrl-e: move viewport down one line
+ctrl-y: move viewport up one line
+ctrl-f: move viewport down a page
+ctrl-b: move viewport up a page
+H: move cursor to the top of the viewport
+L: move cursor to the bottom of the viewport
+zz: centers the current line on the screen
 }: Move to the beginning of the next paragraph or code block.
 %: Jump between matching opening and closing parentheses, brackets, or braces.
 [[: Jump to the previous section of code (e.g., function definition, class declaration).

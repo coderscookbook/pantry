@@ -2,6 +2,9 @@
 Coding_General/complexity_time_space.md
 Python/__GENERAL_CONCEPTS.py
 Python/partials.py
+itertools_module.py
+bisect_module.py
+
 
 # Files
 .gitignore

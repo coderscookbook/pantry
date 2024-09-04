@@ -1,0 +1,155 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 1,
+        "Name": "Lakeview Park",
+        "LandUse": "Parks",
+        "Area_sq_km": 2.5,
+        "Population": 0,
+        "Elevation_m": 150
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.243683, 34.052235]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 2,
+        "Name": "Greenwood Estates",
+        "LandUse": "Residential",
+        "Area_sq_km": 1.2,
+        "Population": 5000,
+        "Elevation_m": 125
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.301834, 34.061073]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 3,
+        "Name": "Sunset Boulevard",
+        "LandUse": "Commercial",
+        "Area_sq_km": 0.8,
+        "Population": 0,
+        "Elevation_m": 100
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.326743, 34.098342]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 4,
+        "Name": "Riverside Apartments",
+        "LandUse": "Residential",
+        "Area_sq_km": 3.0,
+        "Population": 15000,
+        "Elevation_m": 200
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.253438, 34.033256]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 5,
+        "Name": "Silver Lake Reservoir",
+        "LandUse": "Parks",
+        "Area_sq_km": 1.6,
+        "Population": 0,
+        "Elevation_m": 170
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.270073, 34.086829]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 6,
+        "Name": "Downtown Office",
+        "LandUse": "Commercial",
+        "Area_sq_km": 0.5,
+        "Population": 0,
+        "Elevation_m": 90
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.246769, 34.040713]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 7,
+        "Name": "Highland Gardens",
+        "LandUse": "Residential",
+        "Area_sq_km": 2.0,
+        "Population": 8000,
+        "Elevation_m": 130
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.336128, 34.097700]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 8,
+        "Name": "Maplewood School",
+        "LandUse": "Educational",
+        "Area_sq_km": 0.9,
+        "Population": 200,
+        "Elevation_m": 110
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.308479, 34.062500]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 9,
+        "Name": "Hilltop View",
+        "LandUse": "Residential",
+        "Area_sq_km": 1.8,
+        "Population": 6000,
+        "Elevation_m": 140
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.258100, 34.048512]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 10,
+        "Name": "Westside Plaza",
+        "LandUse": "Commercial",
+        "Area_sq_km": 0.6,
+        "Population": 0,
+        "Elevation_m": 80
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.265472, 34.045919]
+      }
+    }
+  ]
+}

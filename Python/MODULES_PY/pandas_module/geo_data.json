@@ -1,0 +1,102 @@
+[
+  {
+    "ID": 1,
+    "Name": "Lakeview Park",
+    "Latitude": 34.052235,
+    "Longitude": -118.243683,
+    "LandUse": "Parks",
+    "Area_sq_km": 2.5,
+    "Population": 0,
+    "Elevation_m": 150
+  },
+  {
+    "ID": 2,
+    "Name": "Greenwood Estates",
+    "Latitude": 34.061073,
+    "Longitude": -118.301834,
+    "LandUse": "Residential",
+    "Area_sq_km": 1.2,
+    "Population": 5000,
+    "Elevation_m": 125
+  },
+  {
+    "ID": 3,
+    "Name": "Sunset Boulevard",
+    "Latitude": 34.098342,
+    "Longitude": -118.326743,
+    "LandUse": "Commercial",
+    "Area_sq_km": 0.8,
+    "Population": 0,
+    "Elevation_m": 100
+  },
+  {
+    "ID": 4,
+    "Name": "Riverside Apartments",
+    "Latitude": 34.033256,
+    "Longitude": -118.253438,
+    "LandUse": "Residential",
+    "Area_sq_km": 3.0,
+    "Population": 15000,
+    "Elevation_m": 200
+  },
+  {
+    "ID": 5,
+    "Name": "Silver Lake Reservoir",
+    "Latitude": 34.086829,
+    "Longitude": -118.270073,
+    "LandUse": "Parks",
+    "Area_sq_km": 1.6,
+    "Population": 0,
+    "Elevation_m": 170
+  },
+  {
+    "ID": 6,
+    "Name": "Downtown Office",
+    "Latitude": 34.040713,
+    "Longitude": -118.246769,
+    "LandUse": "Commercial",
+    "Area_sq_km": 0.5,
+    "Population": 0,
+    "Elevation_m": 90
+  },
+  {
+    "ID": 7,
+    "Name": "Highland Gardens",
+    "Latitude": 34.097700,
+    "Longitude": -118.336128,
+    "LandUse": "Residential",
+    "Area_sq_km": 2.0,
+    "Population": 8000,
+    "Elevation_m": 130
+  },
+  {
+    "ID": 8,
+    "Name": "Maplewood School",
+    "Latitude": 34.062500,
+    "Longitude": -118.308479,
+    "LandUse": "Educational",
+    "Area_sq_km": 0.9,
+    "Population": 200,
+    "Elevation_m": 110
+  },
+  {
+    "ID": 9,
+    "Name": "Hilltop View",
+    "Latitude": 34.048512,
+    "Longitude": -118.258100,
+    "LandUse": "Residential",
+    "Area_sq_km": 1.8,
+    "Population": 6000,
+    "Elevation_m": 140
+  },
+  {
+    "ID": 10,
+    "Name": "Westside Plaza",
+    "Latitude": 34.045919,
+    "Longitude": -118.265472,
+    "LandUse": "Commercial",
+    "Area_sq_km": 0.6,
+    "Population": 0,
+    "Elevation_m": 80
+  }
+]
