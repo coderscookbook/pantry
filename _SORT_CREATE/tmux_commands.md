@@ -1,5 +1,11 @@
 # TMUX COMMANDS
 
+## Command Line
+All scripts in the '.scripts' command in the tmux section
+tos	tmux open session
+tns	tmux new session
+tks	tmux kill session
+
 ## Sessions
 tmux
 tmux new -s SESSION_NAME
